@@ -9,13 +9,69 @@ html(lang="ru")
         link(rel="stylesheet" href="css/style.css")
     body
         header#header
-            nav.nav
-                ul.nav-menu
-                    li.nav-menu-item:  a About us
-                    li.nav-menu-item:  a Reservation
-                    li.nav-menu-item:  a Gallery
-                    li.nav-menu-item:  a Blog
-                    li.nav-menu-item:  a Elements
-                    li.nav-menu-item:  a Shop
+            .nav-wrapper
+                nav.nav
+                    ul.nav-menu
+                        li.nav-menu__item.nav-menu__item-active:  a About us
+                        li.nav-menu__item:  a Reservation
+                        li.nav-menu__item:  a Gallery
+                        li.nav-menu__logo:  .nav-logo
+                                                a(href="index.html").nav-logo
+                                                    img(src="img/logo.svg" alt="Yoga")
+                                                    | Yoga
+                        li.nav-menu__item:  a Blog
+                        li.nav-menu__item:  a Elements
+                        li.nav-menu__item:  a Shop
+            .wrapper-bg
+                .wrapper-bg-two-bg
+                    .form-wrapper
+                        form.form
+                            h2 Trial Class
+                            input(type="text" placeholder="Enter your name")
+                            input(type="text" placeholder="Enter your phone")
+                            select.form__select
+                                option Chose your class
+                                option Yoga 1
+                                option Yoga 2
+                                option Yoga 3
+                            input(type="submit" value="Try it").__submit
+                        .header-presentation
+                            h1 Just balance your mind & body
+                            .header-presentation__prescription Create the healthy living for yourself
+        section#program
+            h3 Yoga feature program
+            .program__prescription Our Classes
+            .program-item
+                img(href="" alt="Ashtanga - Hatha")
+                .program-item__header Yoga for health
+                p.program-item__prescription
+                   | Minim veniam, quis nostrud exercitation ullamco laboris
+                   | nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod
+                   |  tempor incididunt.
+                span.program-item__direction Ashtanga - Hatha
+            .program-item
+                img(href="" alt="Ashtanga - Hatha")
+                .program-item__header Yoga for health
+                p.program-item__prescription
+                    | Minim veniam, quis nostrud exercitation ullamco laboris
+                    | nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod
+                    |  tempor incididunt.
+                span.program-item__direction Ashtanga - Hatha
+            .program-item
+                img(href="" alt="Ashtanga - Hatha")
+                .program-item__header Yoga for health
+                p.program-item__prescription
+                    | Minim veniam, quis nostrud exercitation ullamco laboris
+                    | nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod
+                    |  tempor incididunt.
+                span.program-item__direction Ashtanga - Hatha
+            .program-item
+                img(href="" alt="Ashtanga - Hatha")
+                .program-item__header Yoga for health
+                p.program-item__prescription
+                    | Minim veniam, quis nostrud exercitation ullamco laboris
+                    | nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod
+                    |  tempor incididunt.
+                span.program-item__direction Ashtanga - Hatha
         script(src="libs/jquery/jquery.min.js")
         script(src="js/common.js")
