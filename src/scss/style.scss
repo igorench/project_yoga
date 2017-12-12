@@ -233,11 +233,11 @@ font-size: 14pt;}
 .program-item-content {
   display: flex;
   flex-direction: column;
-  padding: 40px 25px 10px 20px;
+  padding: 40px 20px 10px 20px;
 }
 
 .program-item__prescription, .program-item__direction {
-  font-size: 14pt;
+  font-size: 13pt;
 }
 
 .program-item__direction {
@@ -249,7 +249,7 @@ font-size: 14pt;}
   font-size: 17pt;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 @import 'media';
