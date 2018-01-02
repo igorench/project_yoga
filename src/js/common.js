@@ -6,4 +6,6 @@ $(document).ready(function(){
     $(window).resize(function() {
         heightDetect();
     });
+
+    $(".nav .nav-menu li a").mPageScroll2id();
 });

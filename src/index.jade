@@ -6,22 +6,23 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         title Yoga
         link(rel="stylesheet" href="libs/normalize-css/normalize.css")
+        link(rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css")
         link(rel="stylesheet" href="css/style.css")
     body
         header#header
             .nav-wrapper
                 nav.nav
                     ul.nav-menu
-                        li.nav-menu__item.nav-menu__item-active:  a About us
-                        li.nav-menu__item:  a Reservation
-                        li.nav-menu__item:  a Gallery
+                        li.nav-menu__item.nav-menu__item-active:  a(href="#header") About us
+                        li.nav-menu__item:  a(href="#program") Reservation
+                        li.nav-menu__item:  a(href="#gallery") Gallery
                         li.nav-menu__logo:  .nav-logo
                                                 a(href="index.html").nav-logo
                                                     img(src="img/logo.svg" alt="Yoga")
                                                     | Yoga
-                        li.nav-menu__item:  a Blog
-                        li.nav-menu__item:  a Elements
-                        li.nav-menu__item:  a Shop
+                        li.nav-menu__item:  a(href="#") Blog
+                        li.nav-menu__item:  a(href="#") Elements
+                        li.nav-menu__item:  a(href="#") Shop
             .wrapper-bg
                 .wrapper-bg-two-bg
                     .form-wrapper
@@ -78,5 +79,47 @@ html(lang="ru")
                             | nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod
                             |  tempor incididunt.
                         .program-item__direction Ashtanga - Hatha
+        section#gallery
+            .gallery-container
+                .gallery-item
+                    img(src="img/gallery-img-1.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-2.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-3.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-4.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-5.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-6.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-7.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+                .gallery-item
+                    img(src="img/gallery-img-8.png" alt="photo yoga").gallery-item__img
+                    i.glyphicon.glyphicon-search.gallery-item__pointer
+        section#aboutUs
+            .aboutUS-container
+                .aboutUS-information
+                    h4 About Us
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                     | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                     |   veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex
+                     |   ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse
+                     |   cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+                .aboutUS-slider.owl-carousel.owl-theme
+                    img(src="img/slider-img.png" alt="yoga slider").aboutUS-slider-item
+                    img(src="img/slider-img.png" alt="yoga slider").aboutUS-slider-item
+                    img(src="img/slider-img.png" alt="yoga slider").aboutUS-slider-item
+                    img(src="img/slider-img.png" alt="yoga slider").aboutUS-slider-item
         script(src="libs/jquery/jquery.min.js")
+        script(src="libs/scroll2id/PageScroll2id.min.js")
+        script(src="libs/owl.carousel/owl.carousel.min.js")
         script(src="js/common.js")

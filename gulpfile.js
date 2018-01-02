@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
+    babel = require('gulp-babel'),
     notify = require('gulp-notify'),
     plumber = require('gulp-plumber'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -76,8 +77,10 @@ gulp.task('jade:build', function() {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(rigger()) //Прогоним через rigger
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
+        .pipe(babel({     // Прогоним через babel (es6 в es5)
+            presets: ['env']
+        }))
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build

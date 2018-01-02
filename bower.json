@@ -6,7 +6,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/igorench/project_yoga",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,11 @@
   ],
   "dependencies": {
     "normalize-css": "^7.0.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.8.1",
+    "owl.carousel": "^2.2.1"
+  },
+  "devDependencies": {
+    "slick": "*"
   }
 }
